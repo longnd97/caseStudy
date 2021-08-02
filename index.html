@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Caro</title>
+    <link rel="stylesheet" href="cssFile.css">
+
+</head>
+<body onload="loaded()" id="bgr">
+<div id="main">
+    <table id="table">
+    </table>
+</div>
+<div id="control">
+    <div id="namePlayer"><b>ANH THẢO</b></div>
+    <div id="imgPlayer"></div>
+    <div id="time">06:00</div>
+    <input type="button" class="button" value="NGƯỜI VỚI NGƯỜI" onclick="PvsP()">
+    <input type="button" class="button" value="NGƯỜI VỚI MÁY" onclick="PvsM()">
+    <input type="button" class="button" value="ĐI LẠI" onclick="undo(2)">
+    <input type="button" class="button" value="CHƠI LẠI" onclick="reset()">
+</div>
+</body>
+</html>
+<script src="event.js"></script>
+<script src="ai.js"></script>
